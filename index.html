@@ -9,32 +9,149 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script defer src="index.js"></script>
   </head>
 
   <body>
-    <div class="quiz-container">
+    <!-- <section class="container start-container">
       <h1 class="title">YouTube - Quiz</h1>
-      <section>
-        <h2 class="question">
-          Frage 1: Schieberegler. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Ipsam minus facilis officia.
-        </h2>
-        <div class="slider-container">
-          <p>Verschiebe den Regler bis zur gewünschten Antwort</p>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value="50"
-            class="slider"
-            id="myRange"
-          />
-          <p>
-            <span id="demo"></span>
-          </p>
+      <button class="btn btn-start-game">START</button>
+    </section> -->
+    <section class="container quiz-container">
+      <div class="quiz-container__question-number">
+        <strong>Frage 1:</strong>
+      </div>
+      <div class="quiz-container__question">
+        Was sind "Multi-Channel-Netzwerke"?
+      </div>
+      <hr />
+      <div class="quiz-container__question-options">
+        <div class="quiz-container__question-option">
+          <input class="question-1" type="radio" data-solution="correct" />
+           
+          <label
+            >Organisationen, die viele verschiedene YouTuber unter Vertrag
+            nehmen.</label
+          >
         </div>
-      </section>
-    </div>
+        <div class="quiz-container__question-option">
+          <input class="question-1" type="radio" data-solution="wrong" />
+           
+          <label
+            >YouTuber, die sich selber zu einem Netzwerk
+            zusammenschließen.</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <input class="question-1" type="radio" data-solution="wrong" />
+           
+          <label>Ein YouTuber, der mehrere Channels besitzt.</label>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn btn-answer">Beantworten</button>
+        <button class="btn btn-next hidden">Nächste Frage</button>
+      </div>
+
+      <div class="solution-box">
+        <div class="solution-box__correct hidden">
+          &#10004; Richtig! Sehr gut.
+        </div>
+        <div class="solution-box__wrong hidden">&#x2717; Leider Falsch!</div>
+      </div>
+    </section>
+
+    <section class="container quiz-container hidden">
+      <div class="quiz-container__question-number">
+        <strong>Frage 2:</strong>
+      </div>
+      <div class="quiz-container__question">
+        Welche Vorteile haben diese Organisationen für YouTuber?
+      </div>
+      <hr />
+      <div class="quiz-container__question-options">
+        <div class="quiz-container__question-option">
+          <input class="question-2" type="radio" data-solution="correct" />
+           
+          <label
+            >Sie können leichter mit anderen YouTubern zusammenarbeiten, die bei
+            derselben Organisation sind.</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <input class="question-2" type="radio" data-solution="wrong" />
+           
+          <label>Sie haben mehr Möglichkeiten kreativ zu arbeiten.</label>
+        </div>
+        <div class="quiz-container__question-option">
+          <input class="question-2" type="radio" data-solution="wrong" />
+           
+          <label>Sie werden von den Organisationen bezahlt.</label>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn btn-answer">Beantworten</button>
+        <button class="btn btn-next hidden">Nächste Frage</button>
+      </div>
+
+      <div class="solution-box">
+        <div class="solution-box__correct hidden">
+          &#10004; Richtig! Sehr gut.
+        </div>
+        <div class="solution-box__wrong hidden">&#x2717; Leider Falsch!</div>
+      </div>
+    </section>
+
+    <section class="container quiz-container hidden">
+      <div class="quiz-container__question-number">
+        <strong>Frage 3:</strong>
+      </div>
+      <div class="quiz-container__question">
+        Was haben die Organisationen davon YouTuber unter Vertrag zu nehmen?
+      </div>
+      <hr />
+      <div class="quiz-container__question-options">
+        <div class="quiz-container__question-option">
+          <input class="question-3" type="radio" data-solution="correct" />
+           
+          <label
+            >Sie wollen YouTuber dabei unterstützen, kreativ zu arbeiten</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <input class="question-3" type="radio" data-solution="wrong" />
+           
+          <label
+            >Sie nutzen die Reichtweite aller YouTuber, um gezielt Werbung zu
+            schalten.</label
+          >
+        </div>
+        <div class="quiz-container__question-option">
+          <input class="question-3" type="radio" data-solution="wrong" />
+           
+          <label
+            >Sie erhalten die Einnahmen der YouTuber und verwalten diese.</label
+          >
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn btn-answer">Beantworten</button>
+        <button class="btn btn-next hidden">Nächste Frage</button>
+      </div>
+
+      <div class="solution-box">
+        <div class="solution-box__correct hidden">
+          &#10004; Richtig! Sehr gut.
+        </div>
+        <div class="solution-box__wrong hidden">&#x2717; Leider Falsch!</div>
+      </div>
+    </section>
+    <section class="container result-container hidden">
+      <h1>Geschafft! Hier ist Dein Ergebnis:</h1>
+      <p>
+        Du hast <span id="correct-answers">0</span> von 3 Fragen richtig
+        beantwortet.
+      </p>
+    </section>
   </body>
-  <script src="index.js"></script>
 </html>
