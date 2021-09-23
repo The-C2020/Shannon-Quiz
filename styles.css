@@ -24,6 +24,15 @@ hr {
   width: 95%;
 }
 
+input[type="radio"] {
+  float: left;
+}
+
+label {
+  margin-left: 30px;
+  display: block;
+}
+
 .container {
   background-color: white;
   width: 60%;
@@ -33,6 +42,7 @@ hr {
   border-top: 0.75rem solid #ff0000;
   margin: 1rem;
 }
+
 .btn {
   cursor: pointer;
   background-color: #ff0000;

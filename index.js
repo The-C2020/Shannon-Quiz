@@ -42,6 +42,7 @@ document.querySelectorAll(".btn-answer").forEach((button) => {
 const getNextSection = () => {
   allSections[currentRound].classList.add("hidden");
   currentRound++;
+  currentRound === 2 ? (allNextButtons[2].innerHTML = "Zum Ergebnis") : "";
   currentRound === 3
     ? showEndScreen()
     : allSections[currentRound].classList.remove("hidden");
@@ -54,7 +55,6 @@ const showEndScreen = () => {
 
 const questionAnswered = () => {
   let allAnswers = document.querySelectorAll(`.question-${currentRound + 1}`);
-  console.log(allAnswers);
   for (let i = 0; i < allAnswers.length; i++) {
     if (allAnswers[i].checked) return true;
   }
