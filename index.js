@@ -15,6 +15,7 @@ document.querySelectorAll(".btn-next").forEach((button) => {
 document.querySelectorAll(".btn-answer").forEach((button) => {
   button.addEventListener("click", () => {
     if (!questionAnswered() || answered) return;
+    button.classList.add("hidden");
     let allAnswers = document.querySelectorAll(`.question-${currentRound + 1}`);
     allNextButtons[currentRound].classList.remove("hidden");
     allAnswers.forEach((item) => {
