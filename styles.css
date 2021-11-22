@@ -30,11 +30,14 @@ hr {
 
 input[type="radio"] {
   float: left;
+  margin-right: 20px;
+  margin-top: 5px;
 }
 
 label {
   margin-left: 0;
   display: block;
+  padding: 1rem 0;
 }
 
 .container {
@@ -103,9 +106,7 @@ label {
   padding-left: 2rem;
   margin: 1rem auto;
 }
-.quiz-container__question-option {
-  padding: 1rem 0;
-}
+
 .quiz-container__question-option:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
