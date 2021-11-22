@@ -24,7 +24,7 @@ document.querySelectorAll(".btn-answer").forEach((button) => {
     allAnswers.forEach((item) => {
       if (item.dataset.solution === "correct") {
         answered = true;
-        item.parentElement.classList.add("correct-answer");
+        item.parentElement.parentElement.classList.add("correct-answer");
         if (item.checked) {
           correctAnswers++;
           document
@@ -36,7 +36,7 @@ document.querySelectorAll(".btn-answer").forEach((button) => {
             [currentRound].classList.remove("hidden");
         }
       } else {
-        item.parentElement.classList.add("wrong-answer");
+        item.parentElement.parentElement.classList.add("wrong-answer");
       }
     });
   });
